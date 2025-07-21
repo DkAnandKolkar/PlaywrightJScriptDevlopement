@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import LoginPage from "../pages/LoginPage";
 
-test("Login and Navigate to Home Page",async ({page})=> {
+test("Login and Navigate to Home Page",{tag: ['@playwrightTest']},async ({page})=> {
     await page.goto('https://freelance-learn-automation.vercel.app/login');
     await page.waitForLoadState("load")
     
@@ -15,3 +15,5 @@ test("Login and Navigate to Home Page",async ({page})=> {
     expect(currentUrl).toBe('https://freelance-learn-automation.vercel.app/');
 
 })
+
+// https://www.youtube.com/watch?v=D44k45N6S58
