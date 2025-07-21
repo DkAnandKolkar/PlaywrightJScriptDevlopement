@@ -1,0 +1,7 @@
+Donwload and install nodejs
+Check the node version using : node -v
+Open VS code where you want to create project
+install the playwright : npm init playwright@latest 
+To run the test in headless  : npx playwright test
+To run the test in headed  : npx playwright test --headed
+to show the report :   npx playwright show-report
